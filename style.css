@@ -23,14 +23,18 @@ nav a {
     margin: 0 20px;
     color: #A9B1B1;
     text-decoration: none;
+    font-size: 17px;
 }
 
 nav a.active {
     color: #1245BA;
+    font-size: 17.5px;
+
 }
 
 nav a:hover {
     color: #151211;
+    font-size: 17.5px;
 }
 
 main {
@@ -38,7 +42,8 @@ main {
     margin: 2rem auto;
     padding: 1rem;
     background-color: #F5F5F5;
-    font-size: 14   px
+    font-size: 16px;
+    line-height: 1.15
 }
 
 h1 {
@@ -64,3 +69,17 @@ footer {
     padding-top: 2rem;
 }
 
+
+.column1 {
+    float: left;
+    width: 200px;
+    padding-right: 20px;
+    padding-bottom: 50px
+  }
+
+.column2 {
+    float: left;
+    width: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px
+  }
