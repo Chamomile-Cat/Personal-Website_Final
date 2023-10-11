@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #1E202D;
+    color: #B6B9A1;
+}
+
+nav {
+    background-color: #381F25;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #85CA9A;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #645845;
+}
+
+nav a:hover {
+    color: #151211;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1E202D;
+}
+
+h1 {
+    color: #85CA9A;
+}
+
+a {
+    color: #B6B9A1;
+}
+
+a:hover {
+    color: #645845;
+}
+
+footer {
+    text-align: center;
+    padding-top: 2rem;
+}
