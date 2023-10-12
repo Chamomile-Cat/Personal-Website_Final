@@ -7,7 +7,7 @@ body {
 
 
 
-header, footer {
+header {
     max-width: 800px;
     margin: 2em auto;
     padding: 1rem;
@@ -16,11 +16,16 @@ header, footer {
 }
 
 footer {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1rem;
+    background-color: #f8f8f8fd;
+    font-size: 11px;
     text-align: center;
     padding-top: 2rem;
 }
 
-#githublink {
+#googleformlink, #githublink {
     font-size: 10px
 }
 
@@ -37,7 +42,6 @@ main {
 
 
 
-
 .column1 {
     float: left;
     width: 200px;
@@ -51,7 +55,6 @@ main {
     padding-right: 200px;
     padding-bottom: 80px
   }
-
 
 
 
