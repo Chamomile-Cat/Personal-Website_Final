@@ -2,7 +2,7 @@
 body {
     font-family: 'Courier New', monospace;
     background-color: #f8f8f8fd;
-    color: #707070;
+    color: #474747;
 }
 
 
@@ -75,7 +75,7 @@ nav a.active {
 }
 
 nav a:hover {
-    color: #151211;
+    color: #474747;
     font-size: 17.5px;
 }
 
@@ -86,7 +86,7 @@ h1 {
 }
 
 a {
-    color: #707070;
+    color: #474747;
     font-size: 17px
 }
 
