@@ -83,6 +83,10 @@ nav a:hover {
 }
 
 
+#title {
+    font-size: 22px
+}
+
   
 h1 {
     color: #1245BA;
@@ -90,7 +94,7 @@ h1 {
 
 a {
     color: #474747;
-    font-size: 22px
+    font-size: 19px
 }
 
 
