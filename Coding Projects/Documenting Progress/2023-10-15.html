@@ -20,33 +20,48 @@
 
     <main>
       <a>2023-10-15</a><br>
-      <a>Title: Embedding Code into Blog without CSS or JavaScript</a>
+      <a>Title: Embedding Code into Blog without JavaScript</a>
       <p>
-        <br><b>How do I embbed python code into my blog post?</b>
+        <br><b>How do I embed python code into my blog post?</b>
         <br><br>
-        I need a way to embedd my code in my posts, I cannot continuously snip images from github then put them into HTML. There probably is a way to embed code into HTML with CSS. I normally embed code when I use Logseq. I opened a Logseq Page with all my Githube Python Code using VScode to see its format in markdown. Apparently all it does it does is use a ''' ''' to embed code in markdown. However, I am managing this webpage in HTML not markdown. 
+        I need a way to embed my code in my posts, I cannot continuously snip images from github then put them into HTML. There probably is a way to embed code into HTML with CSS. 
+        
+        I should check how Logseq embeds URLs because I normally embed code when I use Logseq. I opened a Logseq Page with all my Githube Python Code using VScode to see its format in markdown. Apparently all it does it does is use a ''' ''' to embed code in markdown. However, I am managing this webpage in HTML not markdown. <br>
         <br><img src="../../images/logseq_screenshot.png" alt="Logseq page of code">
         <br><br>
          
         <br><br>
-        I searched on Google "html python code block" and found the following two answers.  
-        <iframe src="https://www.w3schools.com/tags/tag_code.asp">
-        </iframe>
-        <iframe src="https://stackoverflow.com/questions/53510125/how-can-i-visually-display-a-block-of-python-code-utilizing-html-css-and-javascr">
-        </iframe>
+        I searched on Google "html python code block" and found the following two answers at 
+        <a href="https://www.w3schools.com/tags/tag_code.asp">W3Schools</a>
+         and  
+        <a href="https://stackoverflow.com/questions/53510125/how-can-i-visually-display-a-block-of-python-code-utilizing-html-css-and-javascr">Stackoverflow</a>.
 
         <br><br>
-        Both pages both suggest using the "code" tag in html along with CSS or Javascript. I do not want to use CSS or JavaScript yet for displaying code yet. I'll just try using the "code" tag for now.
+        W3Schools suggest using the "code" tag in html along with CSS. The Stackoverflow answer suggests a Javascript I'll trying using the "code" tag with CSS first because I do not know JavaScript at all and the "code" tag with CSS looks promising. 
         
         <br><br>
-        An example of me using the "code" tag in HTML
+
+        I used the <a href="https://coolors.co/f8f8f8-e0e9f5-050b0f-006daa-f5c536">coolers</a> website to create a palette for my code block. I made the background  was a blue color, which the code contrasts with. Then the whole website only uses three colors while the code is distinguishable from other texts.<br><br>  
+
+
+        An example of me using the "code" tag in HTML <br><br>
         <code id="python">
-            def add(a,b):
-                return a+b
-            def multiply(a,b):
-                else: return a*b
-                
+            def add(a,b): <br>
+            &emsp;return a+b <br>
+            def multiply(a,b): <br>
+            &emsp;else: return a*b <br><br>                
         </code>  
+
+        Unfortunately the answer at W3Schools is not enough. The padding is not equal across every line of code because the CSS pads over texts not a certain area. I decided to use CSS to create a square then put my code within it. The CSS can be viewed from my <a id="githublink" href="https://github.com/Chamomile-Cat">Github</a>.<br><br>
+        
+        To create the CSS I learned how to put text into rectangles at the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS documentation</a>. I also referred to a  <a href = "https://stackoverflow.com/questions/40842277/create-line-numbers-on-pre-with-css-only">Stackoverflow Answer</a> which illustrated how to put line numbers using counter-increment on varying levels of CSS. I finally learned about positioning in CSS to place the code where I want to. <br><br>
+        The result looks like the following:<br>
+        <pre>
+        <span>def add(a,b):</span><br>
+        <span>&emsp;return a+b</span><br>
+        <span>def multiply(a,b):</span><br>
+        <span>&emsp;else: return a*b</span><br>                
+        </pre>
 
     </p>
 
