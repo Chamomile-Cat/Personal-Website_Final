@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Rest of the <head> remains same as home.html -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyebin Seo - 2023-10-11</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../currentresearchprojects.html">Research Projects</a>
+        <a href="../../cv.html">CV</a>
+        <a href="../../codingprojects.html" class="active">Coding Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <a>2023-10-15</a><br>
+      <a>Title: Embedding Code into Blog without CSS or JavaScript</a>
+      <p>
+        <br><b>How do I embbed python code into my blog post?</b>
+        <br><br>
+        I need a way to embedd my code in my posts, I cannot continuously snip images from github then put them into HTML. There probably is a way to embed code into HTML with CSS. I normally embed code when I use Logseq. I opened a Logseq Page with all my Githube Python Code using VScode to see its format in markdown. Apparently all it does it does is use a ''' ''' to embed code in markdown. However, I am managing this webpage in HTML not markdown. 
+        <br><img src="../../images/logseq_screenshot.png" alt="Logseq page of code">
+        <br><br>
+         
+        <br><br>
+        I searched on Google "html python code block" and found the following two answers.  
+        <iframe src="https://www.w3schools.com/tags/tag_code.asp">
+        </iframe>
+        <iframe src="https://stackoverflow.com/questions/53510125/how-can-i-visually-display-a-block-of-python-code-utilizing-html-css-and-javascr">
+        </iframe>
+
+        <br><br>
+        Both pages both suggest using the "code" tag in html along with CSS or Javascript. I do not want to use CSS or JavaScript yet for displaying code yet. I'll just try using the "code" tag for now.
+        
+        <br><br>
+        An example of me using the "code" tag in HTML
+        <code id="python">
+            def add(a,b):
+                return a+b
+            def multiply(a,b):
+                else: return a*b
+                
+        </code>  
+
+    </p>
+
+    </main>
+
+    <footer>
+      <p>All feedback on my blog posts or coding is appreciated. Send feedback at this <a id="googleformlink" href="https://forms.gle/Nu4xGR7MsRkgKG1P8">google form</a></p>
+
+      <p>      
+        Feel free to contact me directly at seohyebin91 <em>at</em> gmail <br>
+        All my coding projects are at <a id="githublink" href="https://github.com/Chamomile-Cat">Github</a>
+      </p>
+    </footer>
+  </body>
+</html>
