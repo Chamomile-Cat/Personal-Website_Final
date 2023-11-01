@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Rest of the <head> remains same as home.html -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyebin Seo - 2023-11-01</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../currentresearchprojects.html">Research Projects</a>
+        <a href="../../cv.html">CV</a>
+        <a href="../../codingprojects.html" class="active">Coding Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <a id="title">2023-11-01</a><br>
+      <a id="title">Title: Word Counter</a>
+      <p>
+        I wrote at 2023-10-16 and 10-31 that I would keep a 500-word limit on my blog posts. 
+        
+        <b>I just realized I have be completely missing and ignoring this 500-word limit.</b> The reason is that when writing in HTML or writing in a text editor, checking my word count as I write disrupts my flow of writing. Most time I freely write in notepad, edit the text slightly then send the blog post off into the internet. Writing freely ensures that my sentences were natural, ideas came naturally, and make writing these blog posts fun. I further wanted to develop a "feel" for how many words I wrote. Rather than continuously going back from putting down a couple of words, checking how many words I wrote, then adding back a few more, I wanted to be able to predict when I was reaching the 500-word limit. 
+        
+        Therefore, to keep my 500-word limit, <b>I needed a way to 1) automatically calculate number of words in each blog post 2) only after I uploaded them.</b> I initially thought of writing in HTML code that would calculate number of words, but I found a directly embedable word count progress bar at <a href="https://wordcounter.net/">WordCounter</a>. This specific <a href="https://wordcounter.net/blog/2016/03/10/101295_free-word-count-tracker-blog-website.html">post</a> explains how the embedding is done. I set a word goal on the main page, then copy the HTML that makes the progress bar. The progress bar is below, check it out:
+        
+        <!-- embedded word counter progress bar from wordcounter.net -->
+        <div id="goal_embed_button"></div>
+        <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.setAttribute("data-token", "beb91c212b7f4810c5564a9afbc6a44b");js.src = "https://wordcounter.net/js/goal_embed_view.min.js";fjs.parentNode.insertBefore(js, fjs);}(document, "script", "embed_goal_js"));</script>
+    
+    </p>
+
+    </main>
+
+    <footer>
+      <p>All feedback on my blog posts or coding is appreciated. Send feedback at this <a id="googleformlink" href="https://forms.gle/Nu4xGR7MsRkgKG1P8">google form</a></p>
+
+      <p>      
+        Feel free to contact me directly at seohyebin91 <em>at</em> gmail <br>
+        All my coding projects are at <a id="githublink" href="https://github.com/Chamomile-Cat">Github</a>
+      </p>
+    </footer>
+  </body>
+</html>
