@@ -23,14 +23,15 @@
       <a id="title">Title: Word Counter</a>
       <p>
         I wrote at 2023-10-16 and 10-31 that I would keep a 500-word limit on my blog posts. 
-        
+        <br><br>
         <b>I just realized I have be completely missing and ignoring this 500-word limit.</b> The reason is that when writing in HTML or writing in a text editor, checking my word count as I write disrupts my flow of writing. Most time I freely write in notepad, edit the text slightly then send the blog post off into the internet. Writing freely ensures that my sentences were natural, ideas came naturally, and make writing these blog posts fun. I further wanted to develop a "feel" for how many words I wrote. Rather than continuously going back from putting down a couple of words, checking how many words I wrote, then adding back a few more, I wanted to be able to predict when I was reaching the 500-word limit. 
+        <br><br>
+        Therefore, to keep my 500-word limit, <b>I needed a way to 1) automatically calculate number of words in each blog post 2) only after I uploaded them.</b> 
+        <br><br>
+        I found a directly embeeddedable word counter online. Unfortunately, a directly embedable word count progress bar at <a href="https://wordcounter.net/">WordCounter</a> does not seem to work for me. I copied the embed code they gave me, but for some reason it does not seem to load properly. It might have to do with how the last post explaining the embed was from 2016.
+        <br><br>
+        Although I will have to use HTML, CSS, and JavaScript to build a wordcounter myself, I do not know enough JavaScript to do so. I asked my wonderful <a href="https://github.com/Lamzang">boyfriend</a> to build one for me. I hoped that it would be a simple yet fun coding exercise for him. 
         
-        Therefore, to keep my 500-word limit, <b>I needed a way to 1) automatically calculate number of words in each blog post 2) only after I uploaded them.</b> I initially thought of writing in HTML code that would calculate number of words, but I found a directly embedable word count progress bar at <a href="https://wordcounter.net/">WordCounter</a>. This specific <a href="https://wordcounter.net/blog/2016/03/10/101295_free-word-count-tracker-blog-website.html">post</a> explains how the embedding is done. I set a word goal on the main page, then copy the HTML that makes the progress bar. The progress bar is below, check it out:
-        
-        <!-- embedded word counter progress bar from wordcounter.net -->
-        <div id="goal_embed_button"></div>
-        <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.setAttribute("data-token", "beb91c212b7f4810c5564a9afbc6a44b");js.src = "https://wordcounter.net/js/goal_embed_view.min.js";fjs.parentNode.insertBefore(js, fjs);}(document, "script", "embed_goal_js"));</script>
     
     </p>
 
