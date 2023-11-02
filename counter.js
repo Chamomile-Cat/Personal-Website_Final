@@ -2,7 +2,9 @@ const words = document.querySelector(".words");
 const result = document.querySelector(".result");
 
 function countWords(words) {
-  const wordList = words.innerText.split(" ");
+  const organizedWords = words.innerText.replaceAll("\n", " ");
+  const wordList = organizedWords.split(" ");
+
   return wordList.length;
 }
 
