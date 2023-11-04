@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyebin Seo - 2023-11-04</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../currentresearchprojects.html">Research Projects</a>
+        <a href="../../cv.html">CV</a>
+        <a href="../../codingprojects.html" class="active">Coding Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <a id="title">2023-11-04</a><br>
+      <a id="title">Title: Basic Machine Learning with TensorFlow (1)</a>
+      <p class="words">
+
+        I learned the basics of how machine learning works via tensorflow. Here are my notes and review of Machine Learning.
+        <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=tPYj3fFJGjk" frameborder="0" allowfullscreen></iframe>
+        Disclaimer: I skipped modules 5 and 6 because I did not wish to use images and am already learning NLP at a Udemy Course. 
+        <br><br>
+        - Overfitting is a major problem in machine learning. Overfitting is when the model trains too much on the training data that it cannot account for the variations in the testing data. If the accuracy for training data is high yet for testing data is much lower, then overfitting most likely has occured. To prevent overfitting 1) lower the epochs of training 2) readjust parameters 2) change the dropout rate
+        <br><br>
+        - I generalized the steps taken in the code into major steps: 
+        Step 1. Obtain and observe the data to determine 1) which columns are the feature and which is the label 2) major characteristics of the data to analyze 3) which specific model to train 4) whether the labels have more or less the same distribution. If the labels are skewed to a certain label, then the model might become biased towards the label. 
+        Step 2. Separate the data into features and labels. 
+        Step 3. Create the test set and training set data.
+        Step 4. Clean and preprocess the test and training set. 
+        Step 5. Train the model. 
+        Step 6. Test the model
+        Step 7. Refine the model and training conditions. 
+        Step 8. Repeat test 5-7 until the model reaches the desired accuracy.
+        <br><br> 
+         - In neural networks, the input layer is where the raw data comes thorugh. The hidden layer is where the model trains itself. The hidden layer is, in a sense, hidden because programmers often do not directly observe the values in the hidden layer. The output layer is where the model reurns a prediction. In classification the nodes at the input layer often matches the number of features passed in, while the nodes at the output layer match the number of possible classifications. In regression, the nodes at the input layer should also match the passed in features, while output layer should only have 1 node because regression returns a single prediction of a single variable.<br>
+        - The model is determined by weights and biases. Each node within each layer is connected by weights. Weighs are multiplied to values of a node to determine the size and direction of its effect on the value of the next node. Biases are a constant added to the value each node. Biases are added by being linked to all nodes in a given layer. Because biases are simply added to the value , the weight connecting the bias to the next node is almost always 1.<br>
+        - Activation functions adjust the output of a layer. Some common examples are the ReLU function which turns all negative values into 0, the Tanh function which squishes values between -1 and 1, and the sigmoid function which squishes all valeus between 0 and 1.<br>
+        - Loss functions calculate how different the output of the model is from the answers. The loss function calculates "how wrong" the model is. For example, commonly used loss functions in regression are mean standard error or mean absolute error functions. Loss functions are critical because they tell the model how they should adjust their weights through a process called back propagation.<br>
+        - The optimizer is a function that applies back propagation. 
+
+
+      </p>
+      <div class="result"></div>
+
+    </main>
+
+    <footer>
+      <p>All feedback on my blog posts or coding is appreciated. Send feedback at this <a id="googleformlink" href="https://forms.gle/Nu4xGR7MsRkgKG1P8">google form</a></p>
+
+      <p>      
+        Feel free to contact me directly at seohyebin91 <em>at</em> gmail <br>
+        All my coding projects are at <a id="githublink" href="https://github.com/Chamomile-Cat">Github</a>
+      </p>
+    </footer>
+  </body>
+  <script src="../../counter.js"></script>
+</html>
