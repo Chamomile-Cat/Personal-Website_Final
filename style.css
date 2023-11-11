@@ -142,7 +142,7 @@ pre span:before {
 /* Media Query for phones */
 @media only screen and (max-width: 768px) {
     header, footer {
-        font-size: 0.7rem; /* Edit */
+        font-size: 0.5rem; /* Edit */
     }
 
     #googleformlink, #githublink, main {
@@ -150,7 +150,7 @@ pre span:before {
     }
 
     nav a, nav a.active, nav a:hover, #title, h1, a {
-        font-size: 0.7rem; /* Edit */
+        font-size: 0.5rem; /* Edit */
     }
 
     .column1, .column2 {
