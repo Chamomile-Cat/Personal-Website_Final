@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc} % for encoding
+\usepackage{geometry}
+\usepackage{titlesec} % for formatting
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx} % for tables
+\usepackage{enumitem}
+
+% setting up whole document
+\usepackage[sfdefault]{carlito} % font
+
+\geometry{a4paper, margin=2cm} % 17cm wide
+\parindent 0px  % remove indenting
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+
+% format section 
+\titleformat{\section}
+  {\Large\bfseries\uppercase} % large, bold, upperase
+  {}{0em}{}
+ \titlespacing{\section}{0pt}{*0}{*0} % no linespace after
+
+% format subsection
+\titleformat{\subsection}
+  {\large\bfseries} % large, bold, upperase
+  {}{0em}{}
+ \titlespacing{\subsection}{0pt}{*0}{*0} % no linespace after
+
+% format tables
+\setlength{\tabcolsep}{0pt} % No space around cell
+\renewcommand{\arraystretch}{1.1} % Vertical length of cells
+
+\begin{document}
+\begin{center}
+	\begin{huge}\textbf{CURRICULUM VITAE}\end{huge}\\[0.2cm]
+    \begin{large}Hyebin Seo\end{large}\\[0.2cm]
+    \begin{small}
+%    Address (Work): \\
+%    Address (Personal): \\
+%    E-mail (Work): \\
+    E-mail (Personal): seohyebin91@gmail.com\\
+%    Phone (Personal): +82 10-5797-4309 \\[1.4cm]
+    \end{small}
+\end{center}
+
+\section{Biography} % I am a superstar (Qualifications, Outstanding teaching, research, community engagement, awards) 
+Hyebin Seo is currently pursuing research master's degree in English Education at Seoul National University. Her broad research interests encompass the psycholinguistics of reading and writing, methodologies in second language acquisition, technology for language teaching/learning, and doctoral education. She holds a TESOL certificate from both Yonsei University and University of California, Long Beach after undergoing 180 hours of face-to-face training. As a tutor who teaches students, she currently listens to voices and questions from the field to guide her next research question. 
+\vspace{0.8cm}
+
+\section{Qualifications}
+\begin{tabularx}{\textwidth}{X p{8cm} r}
+Research Master's in English Education & Seoul National University & Current\\ [-3pt](Specialization in Teaching Methodology) & &\\
+Bachelor's in English Language and Literature & Yonsei University & 2024/02\\
+TESOL Certification & Yonsei University, & 2023/06\\[-3pt] & University of California, Long Beach & \\  
+\end{tabularx}
+\vspace{0.8cm}
+
+\section{Awards and Honors}
+\begin{tabularx}{\textwidth}{X r}
+Yonsei College of Liberal Arts Academic Conference & 2023 \\
+\begin{minipage}[t]{\linewidth}
+	\begin{itemize}[parsep=-6pt]
+	\item 1st place out of 7 teams
+	\item Received \$300 prize
+	\item Awarded for sentiment analysis and cultural reading of word 'mask' in Korean and US news articles.
+    \end{itemize}
+\end{minipage} & \\
+\end{tabularx}
+\vspace{0.8cm}
+
+\section{Work Experience} % Tutoring, Research Assistant, Lectures
+\begin{tabularx}{\textwidth}{X r}
+English Tutor 2022-Current\\
+\begin{minipage}[t]{\linewidth}
+	\begin{itemize}[parsep=-6pt]
+	\item Lead speaking classes on daily English usage
+	\item Ensured opportunities to practice via interesting content and activities
+	\item Discussed pedagogy with students each week
+    \end{itemize}
+\end{minipage} & \\
+\end{tabularx}
+\vspace{0.8cm}
+
+\section{Coding Experience}
+\subsection{Coding Languages}
+\begin{tabularx}{\textwidth}{X r}
+Python & 2022-present \\
+LaTeX & 2023-present \\
+\end{tabularx}
+\vspace{0.3cm}
+
+\section{Languages}
+\begin{tabularx}{\textwidth}{X r}
+Korean & C2\\
+English & C2 \\
+German & A2 \\
+\end{tabularx}
+\vspace{0.8cm}
+
+\end{document}
+
