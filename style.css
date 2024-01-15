@@ -10,13 +10,7 @@ header {
   margin: 2em auto;
   padding: 1rem;
   background-color: #f8f8f8;
-  font-size: 1rem;
-}
-
-footer,
-#googleformlink,
-#githublink {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -24,7 +18,7 @@ footer {
   margin: 2em auto;
   padding: 1rem;
   background-color: #f8f8f8;
-
+  font-size: 0.8rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -34,8 +28,37 @@ main {
   margin: 2rem auto;
   padding: 1rem;
   background-color: #f8f8f8;
-  font-size: 19px;
+  font-size: 1.2rem;
   line-height: 1.5;
+}
+
+nav {
+  background-color: #e0e9f5;
+  padding: 1rem;
+  text-align: center;
+  a {
+    margin: 0 20px;
+    color: #a9b1b1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &.active {
+      color: #1245ba;
+      font-size: 1.6rem;
+    }
+    &.hover {
+      color: #474747;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: #1245ba;
+}
+
+a {
+  color: #474747;
 }
 
 .title {
@@ -64,130 +87,26 @@ main {
   height: 100%;
 }
 
-nav a,
-nav a.active,
-nav a:hover {
-  font-size: 2rem;
+#githublink {
+  font-size: 0.9rem;
 }
 
-nav {
-  background-color: #e0e9f5;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 20px;
-  color: #a9b1b1;
-  text-decoration: none;
-  font-size: 18.5px;
-}
-
-nav a.active {
-  color: #1245ba;
-  font-size: 18.5px;
-}
-
-nav a:hover {
-  color: #474747;
-  font-size: 17.5px;
-}
-
-#title,
-h1 {
-  font-size: 1.4rem;
-}
-
-h1 {
-  color: #1245ba;
-}
-
-a {
-  color: #474747;
-}
-
-#date {
-  margin-left: 2rem;
-}
-
-/* CSS for code blocks */
-pre {
-  font-family: Consolas, "courier new";
-  color: #61210f;
-  background-color: #e0e9f5;
-
-  line-height: 0.2;
-  font-size: 17px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-
-  width: auto;
-  border-radius: 6px;
-
-  counter-reset: line;
-}
-
-pre span {
-  position: relative;
-  right: 40px;
-}
-
-pre span:before {
-  counter-increment: line;
-  content: counter(line);
-  display: inline-block;
-
-  border-right: 0.7px solid #888;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  color: #888;
-}
-
-/* Media Query for phones */
 @media only screen and (max-width: 768px) {
-  header,
+  header {
+    font-size: 1rem;
+  }
   footer {
-    font-size: 0.5rem; /* Edit */
+    font-size: 0.7rem;
   }
 
-  #googleformlink,
-  #githublink,
+  #githublink {
+    font-size: 0.8rem;
+  }
   main {
-    font-size: 0.5rem; /* Edit */
+    font-size: 1rem;
   }
-
-  nav a,
-  nav a.active,
-  nav a:hover,
-  #title,
-  h1,
-  a {
-    font-size: 0.5rem; /* Edit */
-  }
-
-  .column1,
-  .column2 {
-    float: none; /* Edit */
-    width: auto;
-    padding-right: 1rem;
-  }
-
-  pre {
-    padding: 0.5rem; /* Edit */
-  }
-}
-
-/* Media Query for tablets */ /* Edit */
-@media only screen and (max-width: 768px) {
-  header,
-  footer {
-    font-size: 0.9rem; /* Smaller font size for header and footer */
-  }
-
-  #googleformlink,
-  #githublink,
-  main {
-    font-size: 1rem; /* Adjusted for readability on small screens */
+  .cvlink {
+    font-size: 1rem;
   }
 
   nav a,
@@ -195,17 +114,6 @@ pre span:before {
   nav a:hover,
   h1,
   a {
-    font-size: 1.2rem; /* Scaled down for smaller screens */
-  }
-
-  .column1,
-  .column2 {
-    float: none; /* Stack columns on smaller screens */
-    width: auto;
-    padding-right: 1rem;
-  }
-
-  pre {
-    padding: 0.5rem;
+    font-size: 1.3rem;
   }
 }
