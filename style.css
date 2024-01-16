@@ -1,190 +1,119 @@
 /*Base style*/
 body {
-    font-family: 'Candara', monospace;
-    background-color: #f8f8f8;
-    color: #474747;
+  font-family: "Candara", monospace;
+  background-color: #f8f8f8;
+  color: #474747;
 }
 
 header {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    font-size: 1rem
-}
-
-footer, #googleformlink, #githublink {
-    font-size: 0.9rem
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 1.5rem;
 }
 
 footer {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1rem;
-    background-color: #f8f8f8;
-
-    text-align: center;
-    padding-top: 2rem;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 2rem;
 }
-
-
 
 main {
-    max-width: 680px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    font-size: 19px;
-    line-height: 1.5
-}
-
-
-
-.column1 {
-    float: left;
-    width: 200px;
-    padding-right: 20px;
-    padding-bottom: 80px
-  }
-
-.column2 {
-    float: left;
-    width: 200px;
-    padding-right: 200px;
-    padding-bottom: 80px
-  }
-
-
-  
-nav a, nav a.active, nav a:hover {
-    font-size: 1.15rem
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 nav {
-    background-color: #E0E9F5;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav a {
+  background-color: #e0e9f5;
+  padding: 1rem;
+  text-align: center;
+  a {
     margin: 0 20px;
-    color: #A9B1B1;
+    color: #a9b1b1;
     text-decoration: none;
-    font-size: 18.5px;
-}
-
-nav a.active {
-    color: #1245BA;
-    font-size: 18.5px;
-
-}
-
-nav a:hover {
-    color: #474747;
-    font-size: 17.5px;
-}
-
-
-
-#title, h1 {
-    font-size: 1.4rem
+    font-size: 1.5rem;
+    &.active {
+      color: #1245ba;
+      font-size: 1.6rem;
+    }
+    &.hover {
+      color: #474747;
+      font-size: 1.6rem;
+    }
+  }
 }
 
 h1 {
-    color: #1245BA;
+  font-size: 1.4rem;
+  color: #1245ba;
 }
 
 a {
-    color: #474747;
+  color: #474747;
 }
 
-
-#date {
-    margin-left: 2rem;
+.title {
+  font-size: 2rem;
 }
 
-
-/* CSS for code blocks */
-pre {
-    font-family: Consolas,"courier new";
-    color: #61210F;
-    background-color: #E0E9F5;
-
-    line-height: 0.2;
-    font-size: 17px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-
-    width: auto;
-    border-radius: 6px;
-
-    counter-reset: line
-    
+.profileBox {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
 }
 
-pre span {
-    position: relative; 
-    right: 40px;
+.imgBox {
+  padding: 0.5rem;
+  width: 50%;
+  height: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-pre span:before {
-    counter-increment: line;
-    content: counter(line);
-    display: inline-block;
+.columnImg {
+  width: 100%;
+  height: 100%;
+}
 
-    border-right: 0.7px solid #888;
-    padding: 0.5em;
-    margin-right: 0.5em;
-    color: #888
+#githublink {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.7rem;
   }
 
+  #githublink {
+    font-size: 0.8rem;
+  }
+  main {
+    font-size: 1rem;
+  }
+  .cvlink {
+    font-size: 1rem;
+  }
 
-/* Media Query for phones */
-@media only screen and (max-width: 768px) {
-    header, footer {
-        font-size: 0.5rem; /* Edit */
-    }
-
-    #googleformlink, #githublink, main {
-        font-size: 0.5rem; /* Edit */
-    }
-
-    nav a, nav a.active, nav a:hover, #title, h1, a {
-        font-size: 0.5rem; /* Edit */
-    }
-
-    .column1, .column2 {
-        float: none; /* Edit */
-        width: auto;
-        padding-right: 1rem;
-    }
-
-    pre {
-        padding: 0.5rem; /* Edit */
-    }
-}
-
-/* Media Query for tablets */ /* Edit */
-@media only screen and (max-width: 768px) { 
-    header, footer {
-        font-size: 0.9rem; /* Smaller font size for header and footer */
-    }
-
-    #googleformlink, #githublink, main {
-        font-size: 1rem; /* Adjusted for readability on small screens */
-    }
-
-    nav a, nav a.active, nav a:hover, #title, h1, a {
-        font-size: 1.2rem; /* Scaled down for smaller screens */
-    }
-
-    .column1, .column2 {
-        float: none; /* Stack columns on smaller screens */
-        width: auto;
-        padding-right: 1rem;
-    }
-
-    pre {
-        padding: 0.5rem;
-    }
+  nav a,
+  nav a.active,
+  nav a:hover,
+  h1,
+  a {
+    font-size: 1.3rem;
+  }
 }
