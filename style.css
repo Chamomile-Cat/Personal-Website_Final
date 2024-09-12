@@ -58,6 +58,11 @@ nav a:active {
   color: #1245ba;
   font-size: 1.6rem;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}
 /*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
 
 h1 {
